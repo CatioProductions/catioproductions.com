@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Screen Manager — Catio Productions</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo">🐱 Catio Productions</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.site-nav').classList.toggle('open')">☰</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/apps/">Apps</a></li>
+          <li><a href="/rescue/">Rescue</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Virtual Screen Manager</h1>
+      <p>Up to nine independent virtual workspaces on each physical monitor. Like having multiple monitors — using just one screen.</p>
+      <div class="hero-buttons">
+        <a href="#pricing" class="btn btn-primary">Get It</a>
+        <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
+      </div>
+    </section>
+
+    <!-- What It Is -->
+    <section class="section">
+      <div class="container">
+        <h2>What Is Virtual Screen Manager?</h2>
+        <p>Virtual Screen Manager turns your physical monitors into up to nine independent virtual workspaces per screen. Each workspace behaves like a separate physical monitor — applications open on it, stay on it, hide when you leave, and reappear when you return. Nothing closes, nothing restarts. Switching is nearly instantaneous and your layout is always preserved.</p>
+        <p style="margin-top: 1rem;">This isn't a virtual desktop in the traditional sense. It takes Windows Desktops to the next level — keeping all your applications running in the exact state you left them.</p>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section" style="background: var(--color-white);">
+      <div class="container">
+        <h2>The Workspace Grid</h2>
+        <p>When Virtual Screen Manager launches, a compact grid appears on your screen — your workspace navigator. The default is a 3&times;3 layout with nine cells labeled A through I:</p>
+
+        <div class="grid-diagram">
+          <div class="grid-cell">A</div>
+          <div class="grid-cell active">B</div>
+          <div class="grid-cell">C</div>
+          <div class="grid-cell">D</div>
+          <div class="grid-cell">E</div>
+          <div class="grid-cell">F</div>
+          <div class="grid-cell">G</div>
+          <div class="grid-cell">H</div>
+          <div class="grid-cell">I</div>
+        </div>
+
+        <p style="margin-top: 1rem;">Cells show you what's happening at a glance — active workspaces are bright with a white border, occupied workspaces have a dim blue border, and empty ones fade into the background. Drag the grid to any corner of your screen. Resize it with the handle in the lower-right corner. Both position and size are saved automatically.</p>
+
+        <div class="video-container">
+          <div class="video-placeholder">Grid overview video coming soon</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Switching Workspaces -->
+    <section class="section">
+      <div class="container">
+        <h2>Three Ways to Switch Workspaces</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Click the Grid</h3>
+            <p>Left-click any cell to jump directly to that workspace. The active cell flashes briefly to confirm the switch.</p>
+            <div class="video-container">
+              <div class="video-placeholder">Click switching video coming soon</div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Mouse Edge Navigation</h3>
+            <p>Move your cursor to the screen edge and hold. Virtual Screen Manager detects the direction and switches to the adjacent workspace — just like sliding your mouse to another physical monitor. Dwell time is configurable (200–2000ms) to prevent accidental switches.</p>
+            <div class="video-container">
+              <div class="video-placeholder">Edge switching video coming soon</div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Keyboard Hotkeys</h3>
+            <p>Ctrl+Alt+A through I switches directly to any workspace. The letter matches the label — no memorization needed. Modifier keys are configurable (Ctrl+Alt, Ctrl+Shift, or Alt+Shift).</p>
+            <div class="video-container">
+              <div class="video-placeholder">Hotkey switching video coming soon</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Managing Apps -->
+    <section class="section" style="background: var(--color-white);">
+      <div class="container">
+        <h2>Managing Applications</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Apps Stay Where You Put Them</h3>
+            <p>Launch apps normally — they open on whichever workspace is active. When you switch away, they hide. When you return, they reappear in the exact same state and position.</p>
+          </div>
+          <div class="card">
+            <h3>Move Apps Between Workspaces</h3>
+            <p>Drag a window toward a screen edge to reassign it to the adjacent workspace. Or right-click any window's title bar for a workspace list — pick a destination and it moves instantly.</p>
+          </div>
+          <div class="card">
+            <h3>Clean Exit</h3>
+            <p>When Virtual Screen Manager exits, all tracked applications are released and restored to their normal on-screen positions. Nothing is closed. Your work is preserved.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multi-Monitor -->
+    <section class="section">
+      <div class="container">
+        <h2>Multi-Monitor Support</h2>
+        <p>On multi-monitor systems, each physical screen gets its own independent workspace grid. Switch workspaces on one screen without affecting the others. Use Ctrl+click on a secondary monitor's grid to move the focused window to any workspace on that screen.</p>
+        <p style="margin-top: 1rem;">Hotkeys work across monitors too — tap a hotkey once for the primary monitor, twice for the second, three times for the third.</p>
+        <p style="margin-top: 1rem;">Want all monitors to switch together? Enable <strong>Mirror mode</strong> in Settings and every screen switches to the same workspace simultaneously.</p>
+
+        <div class="video-container">
+          <div class="video-placeholder">Multi-monitor demo video coming soon</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Settings -->
+    <section class="section" style="background: var(--color-white);">
+      <div class="container">
+        <h2>Settings</h2>
+        <p>Right-click any grid cell or the system tray icon to open Settings. Every change takes effect immediately — no Apply button needed.</p>
+        <ul class="feature-list">
+          <li><strong>Layout</strong> — Choose from 2 to 9 workspaces</li>
+          <li><strong>Grid Opacity</strong> — Adjust transparency so the grid fits your workflow</li>
+          <li><strong>Theme</strong> — Light, Dark, or Auto (follows your Windows setting)</li>
+          <li><strong>Edge Hold Time</strong> — 200ms to 2000ms dwell time for edge switching (default 500ms)</li>
+          <li><strong>Corner Catch Size</strong> — Control multi-monitor corner zone size (5%–50%)</li>
+          <li><strong>Start with Windows</strong> — Launch automatically at login</li>
+          <li><strong>Mouse Edge Switching</strong> — Enable/disable, or toggle instantly with Ctrl+Alt+M</li>
+          <li><strong>Mirror All Monitors</strong> — Sync all screens to the same workspace</li>
+          <li><strong>Hotkey Modifiers</strong> — Choose Ctrl+Alt, Ctrl+Shift, or Alt+Shift</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- vs Windows Virtual Desktops -->
+    <section class="section">
+      <div class="container">
+        <h2>How Is This Different from Windows Virtual Desktops?</h2>
+        <div class="comparison-table">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Virtual Screen Manager</th>
+                <th>Windows Virtual Desktops</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Switching</td>
+                <td>Edge-based — feels like sliding to a real monitor</td>
+                <td>Win+Tab overlay or keyboard shortcut</td>
+              </tr>
+              <tr>
+                <td>Taskbar</td>
+                <td>Apps visible across all workspaces</td>
+                <td>Apps only on their assigned desktop</td>
+              </tr>
+              <tr>
+                <td>Per-monitor</td>
+                <td>Each monitor gets its own independent grid</td>
+                <td>All monitors share the same desktop</td>
+              </tr>
+              <tr>
+                <td>Workspaces</td>
+                <td>Up to 9 per monitor</td>
+                <td>Unlimited but shared across all monitors</td>
+              </tr>
+              <tr>
+                <td>App State</td>
+                <td>Apps hidden/shown — never closed or minimized</td>
+                <td>Apps minimized or moved between desktops</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section" style="background: var(--color-white);">
+      <div class="container" style="text-align: center;">
+        <h2>Pricing</h2>
+        <p style="margin: 0 auto 1.5rem;">One-time purchase. No subscription. No recurring fees.</p>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Free</h3>
+            <div class="pricing-price">$0</div>
+            <p>2 workspaces</p>
+            <a href="#" class="btn btn-secondary">Download Free</a>
+          </div>
+          <div class="pricing-card featured">
+            <h3>Plus</h3>
+            <div class="pricing-price">$13.99</div>
+            <p>4 workspaces</p>
+            <a href="#" class="btn btn-primary">Get Plus</a>
+          </div>
+          <div class="pricing-card">
+            <h3>Pro</h3>
+            <div class="pricing-price">$23.49</div>
+            <p>9 workspaces</p>
+            <a href="#" class="btn btn-primary">Get Pro</a>
+          </div>
+        </div>
+        <p class="pricing-note">Available on the Microsoft Store and Gumroad.</p>
+      </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="section">
+      <div class="container">
+        <h2>Requirements</h2>
+        <ul class="feature-list">
+          <li>Windows 10 (version 1903 or later) or Windows 11</li>
+          <li>.NET 8.0 Desktop Runtime (included with installer)</li>
+          <li>Single or multiple physical monitors</li>
+          <li>1920&times;1080 or higher resolution recommended</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="background: var(--color-white);">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Will my applications close when I switch workspaces?</summary>
+            <p>No. Virtual Screen Manager never closes, minimizes, or interferes with your running applications. It moves them off screen and brings them back. Every application stays in exactly the state you left it.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does it work with games or full-screen applications?</summary>
+            <p>Windowed and borderless-windowed games work normally. Exclusive full-screen games operate outside Virtual Screen Manager's reach. Running games in borderless-windowed mode is recommended.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does it affect system performance?</summary>
+            <p>No meaningful impact. The application uses a lightweight polling timer and low-level Win32 calls. CPU and memory usage are negligible during normal operation.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does it require admin privileges?</summary>
+            <p>No. It runs as a standard user application. As a consequence, it cannot manage applications that are themselves running as administrator (Task Manager, Registry Editor, etc.).</p>
+          </details>
+          <details class="faq-item">
+            <summary>What happens to my apps when I close Virtual Screen Manager?</summary>
+            <p>All tracked applications are released and restored to their normal on-screen positions. Nothing is closed. Your work is preserved.</p>
+          </details>
+          <details class="faq-item">
+            <summary>My hotkeys conflict with another application.</summary>
+            <p>Open Settings and change the Hotkey Modifiers option. Ctrl+Shift or Alt+Shift may not conflict where Ctrl+Alt does.</p>
+          </details>
+          <details class="faq-item">
+            <summary>I can't find an application — it seems to have disappeared.</summary>
+            <p>It's almost certainly on a different workspace. Check the grid — any cell with a medium-brightness fill has applications assigned to it. Click through those cells to find it.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support -->
+    <section class="section">
+      <div class="container" style="text-align: center;">
+        <h2>Support</h2>
+        <p>Check the FAQ above first — most questions are answered there. If you need more help:</p>
+        <p style="margin-top: 1rem;">
+          <a href="https://github.com/ReeseDear/MultiMonitor/issues" class="btn btn-primary">Report an Issue</a>
+        </p>
+        <p style="margin-top: 1rem; color: var(--color-text-light);">
+          Email: <a href="mailto:catio.productions.llc@gmail.com">catio.productions.llc@gmail.com</a><br>
+          I read every message and respond personally within 1–2 business days.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Catio Productions. Built with care for cats and code.</p>
+      <p><a href="/rescue/donate.html">Donate</a> · <a href="/about.html">About</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

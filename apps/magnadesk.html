@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MagnaDesk — Catio Productions</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo">🐱 Catio Productions</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.site-nav').classList.toggle('open')">☰</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/apps/">Apps</a></li>
+          <li><a href="/rescue/">Rescue</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <h1>MagnaDesk</h1>
+      <p>A digital corkboard that lives inside your Windows wallpaper. Sticky notes, images, drawings, and live widgets — baked right into your desktop.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary">Download</a>
+        <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
+      </div>
+    </section>
+
+    <!-- What It Is -->
+    <section class="section">
+      <div class="container">
+        <h2>What Is MagnaDesk?</h2>
+        <p>MagnaDesk places interactive sticky notes, images, drawings, and live widgets directly into your Windows wallpaper. Items are rendered into the wallpaper bitmap itself — there's no visible overlay window in normal use. They sit below your desktop icons, behave like part of the wallpaper, and use zero system resources when you're not editing.</p>
+        <p style="margin-top: 1rem;">When you need to add or edit items, press <strong>Ctrl+Shift+M</strong> to open Edit Mode — a transparent overlay spans all your monitors with a full editing toolbar. Make your changes, press Esc, and everything bakes back into the wallpaper.</p>
+
+        <div class="video-container">
+          <div class="video-placeholder">Overview demo video coming soon</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two States -->
+    <section id="how-it-works" class="section" style="background: var(--color-white);">
+      <div class="container">
+        <h2>Two Simple States</h2>
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+          <div class="card">
+            <h3>Viewing Mode</h3>
+            <p>Your items are baked into the wallpaper. No overlay window, no running process drawing on your screen. Items sit below desktop icons like they're part of the wallpaper — because they are. Zero resource overhead.</p>
+          </div>
+          <div class="card">
+            <h3>Edit Mode</h3>
+            <p>Press <strong>Ctrl+Shift+M</strong> or click the tray icon. A transparent overlay appears across all monitors with an editing toolbar. Add, move, resize, rotate, and delete items. Press <strong>Esc</strong> to bake everything back into the wallpaper.</p>
+          </div>
+        </div>
+
+        <div class="video-container">
+          <div class="video-placeholder">Edit mode toggle video coming soon</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Canvas Items -->
+    <section class="section">
+      <div class="container">
+        <h2>What You Can Put on Your Desktop</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Sticky Notes</h3>
+            <p>Editable text notes in five colors — yellow, pink, mint, blue, and white. Move, resize, and rotate them anywhere on your desktop.</p>
+          </div>
+          <div class="card">
+            <h3>Images</h3>
+            <p>Place any JPG or PNG on your desktop with crop support. Or use <strong>Win+Shift+S</strong> to snip anything on screen, then <strong>Ctrl+V</strong> to paste it — web pages, spreadsheets, emails, anything visible.</p>
+          </div>
+          <div class="card">
+            <h3>Freehand Drawing</h3>
+            <p>Draw directly on your desktop with the pen tool. Five colors, adjustable stroke width (1–12px), and a canvas size slider so you can write large and shrink the result. Eraser tool removes individual strokes.</p>
+          </div>
+        </div>
+
+        <div class="video-container">
+          <div class="video-placeholder">Canvas items demo video coming soon</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Widgets -->
+    <section class="section" style="background: var(--color-white);">
+      <div class="container">
+        <h2>Live Widgets</h2>
+        <p>Widgets display live data from your Microsoft and Google accounts, rendered right into your wallpaper. Connect multiple accounts and each widget can pull from a specific account or aggregate across all of them.</p>
+
+        <div class="card-grid">
+          <div class="card">
+            <h3>Task List</h3>
+            <p>Display tasks from a single Microsoft To Do or Google Tasks list. Checkboxes, due dates, and completion status — all visible at a glance on your desktop.</p>
+          </div>
+          <div class="card">
+            <h3>To-Do List</h3>
+            <p>Aggregates tasks across all your lists, grouped by due date — Overdue, Today, Tomorrow, Upcoming, and No Date. Like the To Do app's smart view, but on your wallpaper.</p>
+          </div>
+          <div class="card">
+            <h3>Calendar</h3>
+            <p>Upcoming events grouped by day with subject, time, and location. Shows 7 days ahead by default. Works with Outlook and Google Calendar.</p>
+          </div>
+          <div class="card">
+            <h3>OneNote</h3>
+            <p>Your most recently modified OneNote pages with notebook, section, and relative timestamps. Quick visual of what you've been working on.</p>
+          </div>
+          <div class="card">
+            <h3>Mail</h3>
+            <p>Unread messages from your inbox with sender, subject, and preview. Red indicator for high-importance messages. Shows "Inbox zero" when you're caught up.</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+          <h3 style="color: var(--color-primary);">Widget Features</h3>
+          <ul class="feature-list">
+            <li>Connect multiple Microsoft and Google accounts simultaneously</li>
+            <li>Each widget can show data from one account or all accounts combined</li>
+            <li>11 background color themes — Dark, Slate, Navy, Cobalt, Teal, Forest, Olive, Rust, Wine, Plum, Charcoal</li>
+            <li>Resizing reveals more or fewer items — text stays readable, never scales</li>
+            <li>Auto-refresh on a configurable interval, plus manual refresh</li>
+          </ul>
+        </div>
+
+        <div class="video-container">
+          <div class="video-placeholder">Widgets demo video coming soon</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wallpaper Engine -->
+    <section class="section">
+      <div class="container">
+        <h2>Built-In Wallpaper Engine</h2>
+        <p>MagnaDesk doesn't just draw on your wallpaper — it manages it too.</p>
+
+        <div class="card-grid">
+          <div class="card">
+            <h3>Single Image</h3>
+            <p>Set any image file as your wallpaper with your choice of fit — Stretch, Fill, Fit (letterbox), Center, or Tile.</p>
+          </div>
+          <div class="card">
+            <h3>Slideshow</h3>
+            <p>Cycle through images in a folder at a configurable interval. Sequential or shuffle. Advance anytime with <strong>Ctrl+Alt+W</strong> or from the right-click desktop menu.</p>
+          </div>
+          <div class="card">
+            <h3>Solid Color</h3>
+            <p>Pick a preset color or enter a hex value for a clean, minimal background.</p>
+          </div>
+          <div class="card">
+            <h3>Web Image Sources</h3>
+            <p>Search and download wallpapers from Unsplash, Pexels, and Wallhaven directly in the app. Uses your own free API keys — they never leave your machine.</p>
+          </div>
+        </div>
+
+        <div class="video-container">
+          <div class="video-placeholder">Wallpaper engine demo video coming soon</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Edit Mode Tools -->
+    <section class="section" style="background: var(--color-white);">
+      <div class="container">
+        <h2>Editing Tools</h2>
+        <p>The editing toolbar floats at the bottom of your screen. Drag it anywhere with the grip handle.</p>
+        <ul class="feature-list">
+          <li><strong>Select (S)</strong> — click to select items. Drag to move. Corner handles to resize, rotation handle to rotate, &times; to delete</li>
+          <li><strong>Add Note (N)</strong> — creates a new sticky note at the center of your primary monitor</li>
+          <li><strong>Add Image (I)</strong> — opens a file picker to place an image on the canvas</li>
+          <li><strong>Paste (Ctrl+V)</strong> — pastes a clipboard image. Use Win+Shift+S to capture anything on screen first</li>
+          <li><strong>Pen (P)</strong> — freehand drawing with adjustable stroke width and canvas size</li>
+          <li><strong>Eraser (E)</strong> — click a stroke to erase it</li>
+          <li><strong>Undo (Ctrl+Z)</strong> — reverses the last action</li>
+          <li><strong>Done (Esc)</strong> — exits Edit Mode and bakes everything into the wallpaper</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Multi-Monitor -->
+    <section class="section">
+      <div class="container">
+        <h2>Multi-Monitor Support</h2>
+        <p>The MagnaDesk canvas spans all connected monitors. Place items on any screen and they'll be baked into the correct position in the wallpaper.</p>
+        <ul class="feature-list">
+          <li>Items on disconnected monitors automatically migrate to the nearest active monitor</li>
+          <li>When the monitor reconnects, items return to their original positions</li>
+          <li>Use "Recover Off-Screen Items" from the tray menu if anything gets lost</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Keyboard Shortcuts -->
+    <section class="section" style="background: var(--color-white);">
+      <div class="container">
+        <h2>Keyboard Shortcuts</h2>
+        <div class="shortcut-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Shortcut</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Ctrl + Shift + M</td><td>Toggle Edit Mode (works from anywhere)</td></tr>
+              <tr><td>Ctrl + Alt + W</td><td>Next Wallpaper (works from anywhere)</td></tr>
+              <tr><td>S</td><td>Select tool</td></tr>
+              <tr><td>N</td><td>Add Note</td></tr>
+              <tr><td>I</td><td>Add Image</td></tr>
+              <tr><td>P</td><td>Pen tool</td></tr>
+              <tr><td>E</td><td>Eraser tool</td></tr>
+              <tr><td>Ctrl + V</td><td>Paste clipboard image</td></tr>
+              <tr><td>Ctrl + Z</td><td>Undo</td></tr>
+              <tr><td>Delete / Backspace</td><td>Delete selected item</td></tr>
+              <tr><td>Esc</td><td>Exit Edit Mode</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accounts -->
+    <section class="section">
+      <div class="container">
+        <h2>Account Integration</h2>
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+          <div class="card">
+            <h3>Microsoft</h3>
+            <p>Sign in using the device code flow — you'll get a code to enter at microsoft.com/devicelogin. Grants access to To Do, Calendar, OneNote, and Mail. Works with both personal and work/school accounts.</p>
+          </div>
+          <div class="card">
+            <h3>Google</h3>
+            <p>Sign in via browser-based OAuth. Grants access to Google Calendar, Gmail, and Google Tasks. Multiple accounts supported.</p>
+          </div>
+        </div>
+        <p style="margin-top: 1rem;">All tokens are encrypted via Windows DPAPI and stored locally. Nothing leaves your machine.</p>
+      </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="section" style="background: var(--color-white);">
+      <div class="container">
+        <h2>Requirements</h2>
+        <ul class="feature-list">
+          <li>Windows 10 or Windows 11</li>
+          <li>.NET 8 Desktop Runtime</li>
+          <li>Single or multi-monitor setup</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Support -->
+    <section class="section">
+      <div class="container" style="text-align: center;">
+        <h2>Support</h2>
+        <p style="margin-top: 1rem; color: var(--color-text-light);">
+          Email: <a href="mailto:catio.productions.llc@gmail.com">catio.productions.llc@gmail.com</a><br>
+          I read every message and respond personally within 1–2 business days.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Catio Productions. Built with care for cats and code.</p>
+      <p><a href="/rescue/donate.html">Donate</a> · <a href="/about.html">About</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
