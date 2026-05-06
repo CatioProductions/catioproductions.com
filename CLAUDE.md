@@ -6,8 +6,12 @@ Static website for catioproductions.com — a brand site for Catio Productions (
 
 ## Apps
 
-- **Virtual Screen Manager** — Up to 9 virtual workspaces per physical monitor. Pricing: Free (2), Plus $13.99 (4), Pro $23.49 (9). Available on Microsoft Store and Gumroad.
+- **Virtual Screen Manager** — Up to 9 virtual workspaces per physical monitor. Pricing: Free (2), Plus $13.99 (4), Pro $23.49 (9). Microsoft Store: https://apps.microsoft.com/store/detail/9NR6HH844QZH?cid=DevShareMCLPCB. Gumroad URL pending.
 - **MagnaDesk** — Digital corkboard baked into the Windows wallpaper. Sticky notes, images, drawings, live widgets (Tasks, To-Do, Calendar, OneNote, Mail) with Microsoft + Google account integration. Pricing TBD.
+
+## Contact
+
+- All Catio Productions email going forward: `catio.productions@outlook.com`. The old `catio.productions.llc@gmail.com` is being dropped — replace it anywhere it still appears.
 
 ## Tech Constraints
 
@@ -37,5 +41,6 @@ Static website for catioproductions.com — a brand site for Catio Productions (
 
 - Nav and footer are duplicated across all 8 HTML files — update all files when changing nav/footer.
 - Video placeholders use `<div class="video-placeholder">` — replace with `<video>` tags when mp4 files are provided.
-- Pricing/store/download links are `#` placeholders until real URLs are provided.
-- VSM support links are live: GitHub issues (github.com/ReeseDear/MultiMonitor/issues) and email (catio.productions.llc@gmail.com).
+- VSM Microsoft Store buttons are live (all three tiers point to the same listing — Free/Plus/Pro are unlocked via in-app purchase). Gumroad and MagnaDesk store links remain `#` placeholders until URLs are provided.
+- VSM support links are live: GitHub issues (github.com/CatioProductions/VirtualScreenManager/issues) and email (catio.productions@outlook.com).
+- Reese prefers iterative work: pages will be updated many times before launch, so favor getting overall structure right over polishing every detail. Work one page at a time when asked to update from a manual or doc — don't bleed into other pages without permission.
