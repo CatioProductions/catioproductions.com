@@ -27,7 +27,7 @@
     <!-- Hero -->
     <section class="hero">
       <h1>MagnaDesk</h1>
-      <p>A digital corkboard that lives inside your Windows wallpaper. Sticky notes, images, drawings, and live widgets — baked right into your desktop.</p>
+      <p>A digital corkboard that lives inside your Windows wallpaper. Sticky notes, images, drawings, and live widgets — baked right into your desktop. One keystroke (<strong>Ctrl+Alt+Q</strong>) drops anything on your clipboard straight onto the canvas.</p>
       <div class="hero-buttons">
         <a href="https://apps.microsoft.com/store/detail/9NXHWK9SB67M?cid=DevShareMCLPCB" class="btn btn-primary">Get It on the Microsoft Store</a>
         <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
@@ -63,12 +63,31 @@
           </div>
           <div class="card">
             <h3>Hidden</h3>
-            <p>Tuck everything away with a single toggle. Your notes, drawings, and widgets disappear from the wallpaper, leaving just the wallpaper image itself. Perfect for clean screenshots, screen sharing, or moments when you want a distraction-free desktop. Toggle back when you want it all again — nothing is lost.</p>
+            <p>Tuck everything away with a single toggle — just your wallpaper, no canvas. Quick Paste (<strong>Ctrl+Alt+Q</strong>) still works while hidden, so you can keep capturing things even with the canvas out of sight. Toggle back when you want it all again.</p>
           </div>
         </div>
 
         <div class="video-container">
           <div class="video-placeholder">Edit mode toggle video coming soon</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Paste (headline feature) -->
+    <section class="section">
+      <div class="container">
+        <p style="text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.85rem; color: var(--color-primary); margin-bottom: 0.5rem;">Headline Feature</p>
+        <h2>Quick Paste — Ctrl+Alt+Q</h2>
+        <p>This is the fastest way to get anything off your screen and onto your desktop on Windows. From any app, press <strong>Ctrl+Alt+Q</strong> and MagnaDesk reads your clipboard and drops the contents straight onto the canvas — no Edit Mode, no toolbar, no extra clicks.</p>
+        <ul class="feature-list" style="margin-top: 1rem;">
+          <li><strong>Clipboard has an image?</strong> It's placed at a random spot on the canvas and baked into the wallpaper.</li>
+          <li><strong>Clipboard has text?</strong> A new sticky note is created with that text — still fully editable, never flattened into a bitmap.</li>
+          <li><strong>Canvas hidden?</strong> Quick Paste still works. Items keep accumulating in the background, ready for whenever you toggle the canvas back on.</li>
+        </ul>
+        <p style="margin-top: 1rem;">Pair it with <strong>Win+Shift+S</strong> for the fastest snip-to-desktop loop on Windows: snip anything on screen, hit Ctrl+Alt+Q, done. Reference screenshots, paragraphs of text you want to come back to, code snippets, quotes — all one keystroke from your wallpaper.</p>
+
+        <div class="video-container">
+          <div class="video-placeholder">Quick Paste demo video coming soon</div>
         </div>
       </div>
     </section>
@@ -221,6 +240,7 @@
             </thead>
             <tbody>
               <tr><td>Ctrl + Shift + M</td><td>Toggle Edit Mode (works from anywhere)</td></tr>
+              <tr><td>Ctrl + Alt + Q</td><td>Quick Paste — clipboard image or text onto the canvas (works from anywhere, even when canvas is hidden)</td></tr>
               <tr><td>Ctrl + Alt + W</td><td>Next Wallpaper (works from anywhere)</td></tr>
               <tr><td>S</td><td>Select tool</td></tr>
               <tr><td>N</td><td>Add Note</td></tr>
