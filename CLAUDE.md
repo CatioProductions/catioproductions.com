@@ -6,8 +6,8 @@ Static website for catioproductions.com — a brand site for Catio Productions (
 
 ## Apps
 
-- **Virtual Screen Manager** — Up to 9 virtual workspaces per physical monitor. Pricing: Free (2), Plus $13.99 (4), Pro $23.49 (9). Microsoft Store: https://apps.microsoft.com/store/detail/9NR6HH844QZH?cid=DevShareMCLPCB. Gumroad URL pending.
-- **MagnaDesk** — Digital corkboard baked into the Windows wallpaper. Sticky notes, images, drawings, live widgets (Tasks, To-Do, Calendar, OneNote, Mail) with Microsoft + Google account integration. Pricing TBD.
+- **Virtual Screen Manager** — Up to 9 virtual workspaces per physical monitor. Pricing: Free (2), Plus $13.99 (4), Pro $23.49 (9). Microsoft Store: https://apps.microsoft.com/store/detail/9NR6HH844QZH?cid=DevShareMCLPCB. Gumroad: https://catiodaddy.gumroad.com/l/ztips.
+- **MagnaDesk** — Digital corkboard baked into the Windows wallpaper. Sticky notes, images, drawings, live widgets (Tasks, To-Do, Calendar, OneNote, Mail) with Microsoft + Google account integration. Microsoft Store: https://apps.microsoft.com/store/detail/9NXHWK9SB67M?cid=DevShareMCLPCB. Pricing TBD.
 
 ## Contact
 
@@ -41,6 +41,6 @@ Static website for catioproductions.com — a brand site for Catio Productions (
 
 - Nav and footer are duplicated across all 8 HTML files — update all files when changing nav/footer.
 - Video placeholders use `<div class="video-placeholder">` — replace with `<video>` tags when mp4 files are provided.
-- VSM Microsoft Store buttons are live (all three tiers point to the same listing — Free/Plus/Pro are unlocked via in-app purchase). Gumroad and MagnaDesk store links remain `#` placeholders until URLs are provided.
-- VSM support links are live: GitHub issues (github.com/CatioProductions/VirtualScreenManager/issues) and email (catio.productions@outlook.com).
+- VSM Microsoft Store buttons are live (all three tiers point to the same listing — Free/Plus/Pro are unlocked via in-app purchase). VSM Gumroad link is live. MagnaDesk Microsoft Store link is live.
+- VSM support is email-only (catio.productions@outlook.com). The GitHub issues link was dropped because public GitHub issues require a free account, which is friction customers shouldn't have to deal with.
 - Reese prefers iterative work: pages will be updated many times before launch, so favor getting overall structure right over polishing every detail. Work one page at a time when asked to update from a manual or doc — don't bleed into other pages without permission.
