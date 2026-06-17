@@ -44,10 +44,10 @@ Then visit `http://localhost:8000`.
 
 ## TODO
 
-- [ ] Add screen recording videos (mp4) for Virtual Monitor Manager
-- [ ] Add screen recording videos (mp4) for MagnaDesk
-- [ ] Add MagnaDesk pricing and download/store links
-- [ ] Replace VMM placeholder store links with real Microsoft Store/Gumroad URLs
+- [ ] Add demo videos (YouTube embeds) for Virtual Monitor Manager
+- [ ] Finish MagnaDesk demo videos — Edit Mode, Quick Paste, and Quick Note Edit are embedded; remaining sections still use placeholders
+- [ ] Add MagnaDesk pricing (Store link is live)
+- [x] Microsoft Store links live for VMM and MagnaDesk (Partner Center listings)
 - [ ] Replace placeholder donation links with real Zeffy/GoFundMe URLs
 - [ ] Rework rescue and about pages with real personal content
 - [ ] Add real images/screenshots throughout

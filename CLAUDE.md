@@ -40,7 +40,7 @@ Static website for catioproductions.com — a brand site for Catio Productions (
 ## When Editing
 
 - Nav and footer are duplicated across all 8 HTML files — update all files when changing nav/footer.
-- Video placeholders use `<div class="video-placeholder">` — replace with `<video>` tags when mp4 files are provided.
+- Demo videos are hosted on YouTube and embedded as responsive `<iframe>`s (styled by the `.video-container iframe` rule in `css/style.css`). Remaining `<div class="video-placeholder">` blocks are sections still awaiting a video — replace each with an `<iframe>` embed when a clip is ready. MagnaDesk's Edit Mode, Quick Paste, and Quick Note Edit videos are already embedded.
 - VMM Microsoft Store buttons are live (all three tiers point to the same listing — Free/Plus/Pro are unlocked via in-app purchase). VMM Gumroad link is live. MagnaDesk Microsoft Store link is live.
 - VMM support is email-only (catio.productions@outlook.com). The GitHub issues link was dropped because public GitHub issues require a free account, which is friction customers shouldn't have to deal with.
 - Reese prefers iterative work: pages will be updated many times before launch, so favor getting overall structure right over polishing every detail. Work one page at a time when asked to update from a manual or doc — don't bleed into other pages without permission.
