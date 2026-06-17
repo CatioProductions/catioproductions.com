@@ -398,6 +398,14 @@ main {
   border-radius: 8px;
 }
 
+.video-container iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: block;
+  border: 0;
+  border-radius: 8px;
+}
+
 .video-placeholder {
   background: #ddd;
   border-radius: 8px;

@@ -29,7 +29,7 @@
       <h1>MagnaDesk</h1>
       <p>A digital corkboard that lives inside your Windows wallpaper. Sticky notes, images, drawings, and live widgets — baked right into your desktop. One keystroke (<strong>Ctrl+Alt+Q</strong>) drops anything on your clipboard straight onto the canvas.</p>
       <div class="hero-buttons">
-        <a href="https://apps.microsoft.com/store/detail/9NXHWK9SB67M?cid=DevShareMCLPCB" class="btn btn-primary">Get It on the Microsoft Store</a>
+        <a href="https://apps.microsoft.com/store/detail/9N05BXFN6VRW?cid=DevShareMCLPCS" class="btn btn-primary">Get It on the Microsoft Store</a>
         <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
       </div>
       <p style="margin-top: 0.75rem; color: var(--color-text-light); font-size: 0.95rem;">Downloads are handled through the Microsoft Store.</p>
@@ -68,7 +68,7 @@
         </div>
 
         <div class="video-container">
-          <div class="video-placeholder">Edit mode toggle video coming soon</div>
+          <iframe src="https://www.youtube.com/embed/E4YkAJsFoGg" title="MagnaDesk Edit Mode demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
     </section>
@@ -87,7 +87,29 @@
         <p style="margin-top: 1rem;">Pair it with <strong>Win+Shift+S</strong> for the fastest snip-to-desktop loop on Windows: snip anything on screen, hit Ctrl+Alt+Q, done. Reference screenshots, paragraphs of text you want to come back to, code snippets, quotes — all one keystroke from your wallpaper.</p>
 
         <div class="video-container">
-          <div class="video-placeholder">Quick Paste demo video coming soon</div>
+          <iframe src="https://www.youtube.com/embed/z5_tQ574TZg" title="MagnaDesk Quick Paste demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Note Edit (headline feature) -->
+    <section class="section" style="background: var(--color-white);">
+      <div class="container">
+        <p style="text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.85rem; color: var(--color-primary); margin-bottom: 0.5rem;">Headline Feature</p>
+        <h2>Quick Note Edit — Double-Tap Ctrl+Alt+Q</h2>
+        <p>Same shortcut, two gestures: <strong>one tap pastes, two taps edits.</strong> Double-tap <strong>Ctrl+Alt+Q</strong> within 400&nbsp;ms and a small floating note editor pops up centered on screen — no Edit Mode, no overlay across all your monitors. It's the quickest way to jot down a thought or fix a typo on a note without stopping what you're doing.</p>
+        <ul class="feature-list" style="margin-top: 1rem;">
+          <li><strong>Floating, always-on-top editor</strong> — a compact dark window showing one sticky note at a time, right where you're working.</li>
+          <li><strong>Cycle through every note</strong> — the <strong>❮</strong> / <strong>❯</strong> arrows step through all the notes on your canvas, and the header shows the count so you know where you are.</li>
+          <li><strong>Edit, resize, recolor</strong> — type straight into the note, nudge the font size with <strong>−</strong> / <strong>+</strong>, or recolor it with the five color swatches.</li>
+          <li><strong>+ New note</strong> — drops a fresh blank note on the canvas (random spot, tilt, and color, just like Quick Paste) and jumps the editor right to it with the caret ready.</li>
+          <li><strong>🗑 Delete note</strong> — removes the note you're looking at after a quick confirm (there's no undo). Delete the last one and the window simply closes.</li>
+          <li><strong>Esc closes it</strong> — and only the notes you actually changed trigger a wallpaper re-bake. Cycle through everything without editing and your wallpaper is left exactly as it was.</li>
+        </ul>
+        <p style="margin-top: 1rem;">Scroll inside a long note and the wallpaper bakes the lines you were actually viewing — not always the first line at the top.</p>
+
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/O9-X2P3PUT8" title="MagnaDesk Quick Note Edit demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
     </section>
@@ -106,9 +128,21 @@
             <p>Place any JPG or PNG on your desktop with crop support. Or use <strong>Win+Shift+S</strong> to snip anything on screen, then <strong>Ctrl+V</strong> to paste it — web pages, spreadsheets, emails, anything visible.</p>
           </div>
           <div class="card">
-            <h3>Freehand Drawing</h3>
-            <p>Draw directly on your desktop with the pen tool. Five colors, adjustable stroke width (1–12px), and a canvas size slider so you can write large and shrink the result. Eraser tool removes individual strokes.</p>
+            <h3>Drawing &amp; Shapes</h3>
+            <p>Draw directly on your desktop with the pen tool. Five colors, adjustable stroke width (1–12px), and a canvas size slider so you can write large and shrink the result. Eraser tool removes individual strokes. Plus six shape tools for when freehand isn't precise enough.</p>
           </div>
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+          <h3 style="color: var(--color-primary);">Shape Tools</h3>
+          <p>Beyond freehand ink, the drawing canvas now draws clean shapes — and every shape is stored as an ordinary stroke, so it bakes into the wallpaper and undoes just like anything else you draw.</p>
+          <ul class="feature-list">
+            <li><strong>Six shapes</strong> — Line, Arrow (with barbed tip), Circle, Rectangle, Triangle, and a 5-point Star, each drawn with a single drag.</li>
+            <li><strong>Shift+drag to snap a line</strong> — hold <strong>Shift</strong> while drawing freehand and the stroke becomes a clean straight line between where you started and stopped.</li>
+            <li><strong>Right-click for the tool menu</strong> — right-click an active drawing canvas to switch between Freehand and any shape, clear all strokes, or finish up. The current tool is checkmarked.</li>
+            <li><strong>Rotate while you place</strong> — sizing a Rectangle or Triangle, hold <strong>Shift</strong> or <strong>Spacebar</strong> to lock the size and rotate it around the pick point, then release to keep sizing.</li>
+            <li><strong>Clean undo</strong> — <strong>Ctrl+Z</strong> removes a whole arrow (shaft and both barbs) in one step, and even "Clear All Strokes" can be undone.</li>
+          </ul>
         </div>
 
         <div class="video-container">
@@ -121,7 +155,7 @@
     <section class="section" style="background: var(--color-white);">
       <div class="container">
         <h2>Live Widgets</h2>
-        <p>Widgets display live data from your Microsoft and Google accounts, rendered right into your wallpaper. Connect multiple accounts and each widget can pull from a specific account or aggregate across all of them.</p>
+        <p>Widgets display live data — from your Microsoft and Google accounts and from the world around you — rendered right into your wallpaper. Connect multiple accounts and each account-based widget can pull from a specific account or aggregate across all of them.</p>
 
         <div class="card-grid">
           <div class="card">
@@ -143,6 +177,10 @@
           <div class="card">
             <h3>Mail</h3>
             <p>Unread messages from your inbox with sender, subject, and preview. Red indicator for high-importance messages. Shows "Inbox zero" when you're caught up.</p>
+          </div>
+          <div class="card">
+            <h3>Radar</h3>
+            <p>Live NWS weather radar baked into your wallpaper — no account needed. <strong>Four zoom levels</strong> (Wide ~500&nbsp;km, Regional ~250&nbsp;km, Local ~125&nbsp;km, Town ~60&nbsp;km) pull tighter areas at full source resolution, so closer weather shows real detail instead of bigger pixels. <strong>Pan</strong> the view north/south/east/west to center on your town rather than the radar station, or hit <strong>⌖</strong> to recenter. Zoomed views sit over a topographic basemap so storms line up with real towns and coastlines.</p>
           </div>
         </div>
 
@@ -205,7 +243,7 @@
           <li><strong>Add Note (N)</strong> — creates a new sticky note at the center of your primary monitor</li>
           <li><strong>Add Image (I)</strong> — opens a file picker to place an image on the canvas</li>
           <li><strong>Paste (Ctrl+V)</strong> — pastes a clipboard image. Use Win+Shift+S to capture anything on screen first</li>
-          <li><strong>Pen (P)</strong> — freehand drawing with adjustable stroke width and canvas size</li>
+          <li><strong>Pen (P)</strong> — freehand drawing with adjustable stroke width and canvas size, plus six shape tools (Line, Arrow, Circle, Rectangle, Triangle, Star) from the canvas right-click menu</li>
           <li><strong>Eraser (E)</strong> — click a stroke to erase it</li>
           <li><strong>Undo (Ctrl+Z)</strong> — reverses the last action</li>
           <li><strong>Done (Esc)</strong> — exits Edit Mode and bakes everything into the wallpaper</li>
@@ -241,6 +279,7 @@
             <tbody>
               <tr><td>Ctrl + Shift + M</td><td>Toggle Edit Mode (works from anywhere)</td></tr>
               <tr><td>Ctrl + Alt + Q</td><td>Quick Paste — clipboard image or text onto the canvas (works from anywhere, even when canvas is hidden)</td></tr>
+              <tr><td>Ctrl + Alt + Q, Q</td><td>Quick Note Edit — double-tap within 400&nbsp;ms to open the floating note editor (single tap is Quick Paste)</td></tr>
               <tr><td>Ctrl + Alt + W</td><td>Next Wallpaper (works from anywhere)</td></tr>
               <tr><td>S</td><td>Select tool</td></tr>
               <tr><td>N</td><td>Add Note</td></tr>

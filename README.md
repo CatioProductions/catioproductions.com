@@ -20,7 +20,7 @@ about.html                          — About the person behind it
 css/style.css                       — Single shared stylesheet
 apps/
   index.html                        — App catalog
-  virtual-screen-manager.html       — Product page (full details from user manual)
+  virtual-monitor-manager.html      — Product page (full details from user manual)
   magnadesk.html                    — Product page (full details from user manual + docs)
 rescue/
   index.html                        — Cat rescue mission + TNR info
@@ -29,7 +29,7 @@ rescue/
 
 ## Apps
 
-- **Virtual Screen Manager** — Up to 9 virtual workspaces per physical monitor. Free/Plus ($13.99)/Pro ($23.49) tiers.
+- **Virtual Monitor Manager** — Up to 9 virtual workspaces per physical monitor. Free/Plus ($13.99)/Pro ($23.49) tiers.
 - **MagnaDesk** — Digital corkboard baked into the Windows wallpaper. Sticky notes, images, drawings, and live widgets (Tasks, To-Do, Calendar, OneNote, Mail) with Microsoft + Google accounts.
 
 ## Local Preview
@@ -44,10 +44,10 @@ Then visit `http://localhost:8000`.
 
 ## TODO
 
-- [ ] Add screen recording videos (mp4) for Virtual Screen Manager
+- [ ] Add screen recording videos (mp4) for Virtual Monitor Manager
 - [ ] Add screen recording videos (mp4) for MagnaDesk
 - [ ] Add MagnaDesk pricing and download/store links
-- [ ] Replace VSM placeholder store links with real Microsoft Store/Gumroad URLs
+- [ ] Replace VMM placeholder store links with real Microsoft Store/Gumroad URLs
 - [ ] Replace placeholder donation links with real Zeffy/GoFundMe URLs
 - [ ] Rework rescue and about pages with real personal content
 - [ ] Add real images/screenshots throughout
