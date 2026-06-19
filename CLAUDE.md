@@ -33,7 +33,7 @@ Static website for catioproductions.com — a brand site for Catio Productions (
 - `apps/index.html` — app catalog
 - `apps/virtual-monitor-manager.html` — full product page (built from user manual)
 - `apps/magnadesk.html` — full product page (built from user manual + README + changelog)
-- `rescue/index.html` — mission page (placeholder copy — Reese will rework later)
+- `rescue/index.html` — mission page (placeholder copy — Reese will rework later). Includes an "Affiliates & Partners" section: a `.card-grid` of `.card affiliate-card` placeholder cards plus a "Become an Affiliate" mailto CTA.
 - `rescue/donate.html` — donation page
 - `css/style.css` — all styles
 
@@ -44,3 +44,6 @@ Static website for catioproductions.com — a brand site for Catio Productions (
 - VMM Microsoft Store buttons are live (all three tiers point to the same listing — Free/Plus/Pro are unlocked via in-app purchase). VMM Gumroad link is live. MagnaDesk Microsoft Store link is live.
 - VMM support is email-only (catio.productions@outlook.com). The GitHub issues link was dropped because public GitHub issues require a free account, which is friction customers shouldn't have to deal with.
 - Reese prefers iterative work: pages will be updated many times before launch, so favor getting overall structure right over polishing every detail. Work one page at a time when asked to update from a manual or doc — don't bleed into other pages without permission.
+- Affiliate cards (rescue page) use placeholder `<div class="affiliate-photo">` boxes, not `<img>`, because no image folder exists yet. When real partner logos/photos arrive, create `img/affiliates/` and swap each div for `<img src="../img/affiliates/name.jpg" alt="..." class="affiliate-photo">` (the `.affiliate-photo` CSS class works for both div and img). Affiliate purchase-tracking links are a later marketing stage — see the affiliate-strategy memory.
+- Section headlines (`.section h2`) and intro/supporting paragraphs (`.section .container > p`) are centered site-wide. Card body text stays left-aligned for readability.
+- Site is tiny (~110 KB of served HTML/CSS) vs the 1 GB GitHub Pages cap — effectively unlimited headroom. Demo videos live on YouTube, so only future images count against it. `.vs/` is gitignored (not published).
