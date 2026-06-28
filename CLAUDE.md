@@ -7,7 +7,7 @@ Static website for catioproductions.com — a brand site for Catio Productions (
 ## Apps
 
 - **Virtual Monitor Manager** — Up to 9 virtual workspaces per physical monitor. Pricing: Free (2), Plus $13.99 (4), Pro $23.49 (9). Microsoft Store: https://apps.microsoft.com/store/detail/9NGZ2X05DZDT?cid=DevShareMCLPCS. Gumroad: https://catiodaddy.gumroad.com/l/ztips.
-- **MagnaDesk** — Digital corkboard baked into the Windows wallpaper. Sticky notes, images, drawings, live widgets (Tasks, To-Do, Calendar, OneNote, Mail) with Microsoft + Google account integration. Microsoft Store: https://apps.microsoft.com/store/detail/9N05BXFN6VRW?cid=DevShareMCLPCS. Pricing TBD.
+- **MagnaDesk** — Digital corkboard baked into the Windows wallpaper. Sticky notes, images, drawings, live widgets (Tasks, To-Do, Calendar, OneNote, Mail, plus global Radar + Weather). Microsoft account integration is live; Google account integration (Tasks/Calendar/Gmail) is temporarily switched off until production and labeled "coming soon" sitewide. Radar/Weather are worldwide (no account): data powered by LibreWXR (plain-text credit, no public link yet), forecasts + city search from Open-Meteo, radar basemap from Esri World Street Map, Italian radar tiles credited "Radar-DPC". Microsoft Store: https://apps.microsoft.com/store/detail/9N05BXFN6VRW?cid=DevShareMCLPCS. Pricing TBD.
 
 ## Contact
 

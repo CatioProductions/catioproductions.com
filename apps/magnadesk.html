@@ -155,12 +155,13 @@
     <section class="section" style="background: var(--color-white);">
       <div class="container">
         <h2>Live Widgets</h2>
-        <p>Widgets display live data — from your Microsoft and Google accounts and from the world around you — rendered right into your wallpaper. Connect multiple accounts and each account-based widget can pull from a specific account or aggregate across all of them.</p>
+        <p>Widgets display live data — from your Microsoft account and from the world around you — rendered right into your wallpaper. Connect multiple accounts and each account-based widget can pull from a specific account or aggregate across all of them.</p>
+        <p style="margin-top: 0.75rem; color: var(--color-text-light);"><strong>Google account widgets are temporarily switched off</strong> while I move the app to production — Google Tasks, Calendar, and Gmail support is coming soon.</p>
 
         <div class="card-grid">
           <div class="card">
             <h3>Task List</h3>
-            <p>Display tasks from a single Microsoft To Do or Google Tasks list. Checkboxes, due dates, and completion status — all visible at a glance on your desktop.</p>
+            <p>Display tasks from a single Microsoft To Do list (Google Tasks coming soon). Checkboxes, due dates, and completion status — all visible at a glance on your desktop.</p>
           </div>
           <div class="card">
             <h3>To-Do List</h3>
@@ -168,7 +169,7 @@
           </div>
           <div class="card">
             <h3>Calendar</h3>
-            <p>Upcoming events grouped by day with subject, time, and location. Shows 7 days ahead by default. Works with Outlook and Google Calendar.</p>
+            <p>Upcoming events grouped by day with subject, time, and location. Shows 7 days ahead by default. Works with Outlook (Google Calendar coming soon).</p>
           </div>
           <div class="card">
             <h3>OneNote</h3>
@@ -180,14 +181,18 @@
           </div>
           <div class="card">
             <h3>Radar</h3>
-            <p>Live NWS weather radar baked into your wallpaper — no account needed. <strong>Four zoom levels</strong> (Wide ~500&nbsp;km, Regional ~250&nbsp;km, Local ~125&nbsp;km, Town ~60&nbsp;km) pull tighter areas at full source resolution, so closer weather shows real detail instead of bigger pixels. <strong>Pan</strong> the view north/south/east/west to center on your town rather than the radar station, or hit <strong>⌖</strong> to recenter. Zoomed views sit over a topographic basemap so storms line up with real towns and coastlines.</p>
+            <p>Live weather radar baked into your wallpaper — worldwide, no account needed. Search any city to drop the view where you live. <strong>Four zoom levels</strong> (Wide ~500&nbsp;km, Regional ~250&nbsp;km, Local ~125&nbsp;km, Town ~60&nbsp;km) pull tighter areas at full source resolution, so closer weather shows real detail instead of bigger pixels. <strong>Pan</strong> the view north/south/east/west to center on your town, or hit <strong>⌖</strong> to recenter. Zoomed views sit over an Esri World Street Map basemap so storms line up with real towns and coastlines.</p>
+          </div>
+          <div class="card">
+            <h3>Weather</h3>
+            <p>A worldwide forecast on your wallpaper — no account, no API key. Search any city and the widget pulls current conditions and the days ahead from Open-Meteo. It shares the same city search as the Radar widget, so picking your location once is enough.</p>
           </div>
         </div>
 
         <div style="margin-top: 1.5rem;">
           <h3 style="color: var(--color-primary);">Widget Features</h3>
           <ul class="feature-list">
-            <li>Connect multiple Microsoft and Google accounts simultaneously</li>
+            <li>Connect multiple Microsoft accounts simultaneously (Google accounts coming soon)</li>
             <li>Each widget can show data from one account or all accounts combined</li>
             <li>11 background color themes — Dark, Slate, Navy, Cobalt, Teal, Forest, Olive, Rust, Wine, Plum, Charcoal</li>
             <li>Resizing reveals more or fewer items — text stays readable, never scales</li>
@@ -198,6 +203,8 @@
         <div class="video-container">
           <div class="video-placeholder">Widgets demo video coming soon</div>
         </div>
+
+        <p style="margin-top: 1.5rem; color: var(--color-text-light); font-size: 0.9rem;">Weather and radar data powered by <strong>LibreWXR</strong>. Worldwide forecasts and city search from <a href="https://open-meteo.com">Open-Meteo</a>; radar basemap tiles from Esri World Street Map. Italian radar tiles are <strong>Radar-DPC</strong> (Italian Dipartimento della Protezione Civile).</p>
       </div>
     </section>
 
@@ -306,8 +313,8 @@
             <p>Sign in using the device code flow — you'll get a code to enter at microsoft.com/devicelogin. Grants access to To Do, Calendar, OneNote, and Mail. Works with both personal and work/school accounts.</p>
           </div>
           <div class="card">
-            <h3>Google</h3>
-            <p>Sign in via browser-based OAuth. Grants access to Google Calendar, Gmail, and Google Tasks. Multiple accounts supported.</p>
+            <h3>Google <span style="font-size: 0.8rem; color: var(--color-primary);">— coming soon</span></h3>
+            <p>Sign in via browser-based OAuth for access to Google Calendar, Gmail, and Google Tasks, with multiple accounts supported. Google connectivity is temporarily switched off while I finish moving the app to production — it's coming soon.</p>
           </div>
         </div>
         <p style="margin-top: 1rem;">All tokens are encrypted via Windows DPAPI and stored locally. Nothing leaves your machine.</p>
