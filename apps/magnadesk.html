@@ -39,7 +39,7 @@
     <section class="section">
       <div class="container">
         <h2>What Is MagnaDesk?</h2>
-        <p>MagnaDesk places interactive sticky notes, images, drawings, and live widgets directly into your Windows wallpaper. Items are rendered into the wallpaper bitmap itself — there's no visible overlay window in normal use. They sit below your desktop icons, behave like part of the wallpaper, and use zero system resources when you're not editing.</p>
+        <p>MagnaDesk places interactive sticky notes, images, drawings, and live widgets directly into your Windows wallpaper. Items are rendered into the wallpaper bitmap itself — there's no visible overlay window in normal use. They sit below your desktop icons, behave like part of the wallpaper, and ask next to nothing of your machine when you're not editing.</p>
         <p style="margin-top: 1rem;">When you need to add or edit items, press <strong>Ctrl+Shift+M</strong> to open Edit Mode — a transparent overlay spans all your monitors with a full editing toolbar. Make your changes, press Esc, and everything bakes back into the wallpaper.</p>
 
         <div class="video-container">
@@ -70,6 +70,17 @@
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/E4YkAJsFoGg" title="MagnaDesk Edit Mode demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+
+        <div style="margin-top: 1.5rem;">
+          <h3 style="color: var(--color-primary);">Taskbar Button or Tray Icon — Your Call</h3>
+          <p>MagnaDesk is meant to sit quietly in the system tray and stay out of your taskbar. The catch: Windows 11 hides new tray icons by default, and plenty of first-time users simply couldn't find the app. So you get a choice.</p>
+          <ul class="feature-list">
+            <li><strong>Taskbar button</strong> — a normal window with <strong>Edit Desktop</strong> and <strong>Settings</strong> buttons and a menu with everything else. Closing it minimizes and MagnaDesk keeps running; quit with <strong>Exit</strong>. New installs start here.</li>
+            <li><strong>Tray icon</strong> — the quiet original. Left-click toggles Edit Mode, right-click opens the full menu.</li>
+            <li><strong>Switch anytime</strong> in <strong>Settings → General → Taskbar / Tray</strong>. One or the other, never both.</li>
+          </ul>
+          <p style="margin-top: 1rem;">If you want the tray icon and Windows has hidden it: click the <strong>^</strong> chevron by your clock and drag the MagnaDesk icon out onto the taskbar. No chevron at all? Right-click the taskbar → <strong>Taskbar settings</strong> → <strong>Other system tray icons</strong> → switch <strong>MagnaDesk</strong> on. It's a one-time thing per install, and the Settings panel walks you through it.</p>
+        </div>
       </div>
     </section>
 
@@ -85,6 +96,7 @@
           <li><strong>Canvas hidden?</strong> Quick Paste still works. Items keep accumulating in the background, ready for whenever you toggle the canvas back on.</li>
         </ul>
         <p style="margin-top: 1rem;">Pair it with <strong>Win+Shift+S</strong> for the fastest snip-to-desktop loop on Windows: snip anything on screen, hit Ctrl+Alt+Q, done. Reference screenshots, paragraphs of text you want to come back to, code snippets, quotes — all one keystroke from your wallpaper.</p>
+        <p style="margin-top: 1rem; color: var(--color-text-light); font-size: 0.95rem;">Quick Paste is yours free for the first 30 days along with everything else, and is one of the features the full-version unlock restores after that. <a href="#pricing">How that works</a>.</p>
 
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/z5_tQ574TZg" title="MagnaDesk Quick Paste demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -107,6 +119,7 @@
           <li><strong>Esc closes it</strong> — and only the notes you actually changed trigger a wallpaper re-bake. Cycle through everything without editing and your wallpaper is left exactly as it was.</li>
         </ul>
         <p style="margin-top: 1rem;">Scroll inside a long note and the wallpaper bakes the lines you were actually viewing — not always the first line at the top.</p>
+        <p style="margin-top: 1rem; color: var(--color-text-light); font-size: 0.95rem;">Like Quick Paste, this is included free for your first 30 days and restored by the full-version unlock after that. <a href="#pricing">How that works</a>.</p>
 
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/O9-X2P3PUT8" title="MagnaDesk Quick Note Edit demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -128,10 +141,16 @@
             <p>Place any JPG or PNG on your desktop with crop support. Or use <strong>Win+Shift+S</strong> to snip anything on screen, then <strong>Ctrl+V</strong> to paste it — web pages, spreadsheets, emails, anything visible.</p>
           </div>
           <div class="card">
+            <h3>Documents</h3>
+            <p>Drop a PDF, Word doc, or Excel sheet onto the canvas and it sits there as a thumbnail — so the file you keep losing track of is pinned to your wallpaper instead of buried in a folder.</p>
+          </div>
+          <div class="card">
             <h3>Drawing &amp; Shapes</h3>
-            <p>Draw directly on any item or widget on your desktop with the pen tool — no dedicated canvas required. Five colors, adjustable stroke width (1–12px), and scroll-wheel zoom to write large and shrink the result. Eraser tool removes individual strokes. Plus six shape tools for when freehand isn't precise enough.</p>
+            <p>Draw directly on any item or widget on your desktop with the pen tool — no dedicated canvas required. Five colors, adjustable stroke width (1–12px), and scroll-wheel zoom to write large and shrink the result. Works with a Surface Pen or any stylus, so you can write in your own handwriting. Eraser tool removes individual strokes. Plus six shape tools for when freehand isn't precise enough.</p>
           </div>
         </div>
+
+        <p style="margin-top: 1.5rem;">Select a note, image, or drawing and spin the mouse wheel to scale it — it grows and shrinks from the center at 10% a notch, no handle-grabbing required, and the whole gesture undoes in one step. Widgets respond to the wheel too, in their own way — see Live Widgets below.</p>
 
         <div style="margin-top: 1.5rem;">
           <h3 style="color: var(--color-primary);">Shape Tools</h3>
@@ -156,7 +175,7 @@
       <div class="container">
         <h2>Live Widgets</h2>
         <p>Widgets display live data — from your Microsoft account and from the world around you — rendered right into your wallpaper. Connect multiple accounts and each account-based widget can pull from a specific account or aggregate across all of them.</p>
-        <p style="margin-top: 0.75rem; color: var(--color-text-light);"><strong>Google account widgets are temporarily switched off</strong> while I move the app to production — Google Tasks, Calendar, and Gmail support is coming soon.</p>
+        <p style="margin-top: 0.75rem; color: var(--color-text-light);"><strong>Google account widgets are temporarily switched off</strong> while Google finishes reviewing the permissions MagnaDesk asks for. Google Calendar, Tasks, and Keep will switch on automatically in an update — no reinstall needed. Gmail follows after that.</p>
 
         <div class="card-grid">
           <div class="card">
@@ -181,22 +200,28 @@
           </div>
           <div class="card">
             <h3>Radar</h3>
-            <p>Live weather radar baked into your wallpaper — worldwide, no account needed. Search any city to drop the view where you live. <strong>Four zoom levels</strong> (Wide ~500&nbsp;km, Regional ~250&nbsp;km, Local ~125&nbsp;km, Town ~60&nbsp;km) pull tighter areas at full source resolution, so closer weather shows real detail instead of bigger pixels. <strong>Pan</strong> the view north/south/east/west to center on your town, or hit <strong>⌖</strong> to recenter. Zoomed views sit over an Esri World Street Map basemap so storms line up with real towns and coastlines.</p>
+            <p>Live weather radar baked into your wallpaper — no account needed. Search any city to drop the view where you live. True radar covers the <strong>UK &amp; Europe</strong> (EUMETNET OPERA), <strong>North America</strong>, and a good many other regions, with a global model layer filling in everywhere else. <strong>Four zoom levels</strong> (Wide ~500&nbsp;km, Regional ~250&nbsp;km, Local ~125&nbsp;km, Town ~60&nbsp;km) pull tighter areas at full source resolution, so closer weather shows real detail instead of bigger pixels. <strong>Pan</strong> the view north/south/east/west to center on your town, or hit <strong>⌖</strong> to recenter. Zoomed views sit over an Esri World Street Map basemap so storms line up with real towns and coastlines. Free for 30 days, then part of the full version.</p>
           </div>
           <div class="card">
             <h3>Weather</h3>
-            <p>A worldwide forecast on your wallpaper — no account, no API key. Search any city and the widget pulls current conditions and the days ahead from Open-Meteo. It shares the same city search as the Radar widget, so picking your location once is enough.</p>
+            <p>A worldwide forecast on your wallpaper — no account, no API key. Search any city and the widget pulls current conditions and the days ahead from Open-Meteo. It shares the same city search as the Radar widget, so picking your location once is enough. Set whether new Weather widgets start in °C or °F in Settings → General → Units.</p>
+          </div>
+          <div class="card">
+            <h3>Local To-Do</h3>
+            <p>A plain checklist that lives on your desktop and nowhere else. No account, no sign-in, no sync — just a list you tick off, stored on your own computer.</p>
           </div>
         </div>
 
         <div style="margin-top: 1.5rem;">
           <h3 style="color: var(--color-primary);">Widget Features</h3>
           <ul class="feature-list">
-            <li>Connect multiple Microsoft accounts simultaneously (Google accounts coming soon)</li>
+            <li>Connect multiple Microsoft accounts simultaneously — a full-version feature; the free version runs one account (Google accounts coming soon)</li>
             <li>Each widget can show data from one account or all accounts combined</li>
-            <li>11 background color themes — Dark, Slate, Navy, Cobalt, Teal, Forest, Olive, Rust, Wine, Plum, Charcoal</li>
+            <li>11 background color themes — Dark, Slate, Navy, Cobalt, Teal, Forest, Olive, Rust, Wine, Plum, Charcoal (full version)</li>
             <li>Scroll wheel resizes a widget — scaling reveals more or fewer items; hold Shift while scrolling to scale the text too</li>
-            <li>Auto-refresh on a configurable interval, plus manual refresh</li>
+            <li>Auto-refresh on a configurable interval, plus manual refresh — all widgets refresh at once, so a screen full of them updates in about the time the slowest one takes</li>
+            <li>Offline? Widgets keep showing your last synced data instead of going blank, and mark the status line (⚠ Updated 9:24 AM) so you know you're looking at something stale</li>
+            <li>Hide the canvas and widget refresh pauses to save CPU and network — everything fast-forwards when you bring it back, so nothing looks frozen in time</li>
           </ul>
         </div>
 
@@ -204,7 +229,7 @@
           <div class="video-placeholder">Widgets demo video coming soon</div>
         </div>
 
-        <p style="margin-top: 1.5rem; color: var(--color-text-light); font-size: 0.9rem;">Weather and radar data powered by <strong>LibreWXR</strong>. Worldwide forecasts and city search from <a href="https://open-meteo.com">Open-Meteo</a>; radar basemap tiles from Esri World Street Map. Italian radar tiles are <strong>Radar-DPC</strong> (Italian Dipartimento della Protezione Civile).</p>
+        <p style="margin-top: 1.5rem; color: var(--color-text-light); font-size: 0.9rem;">Weather and radar data powered by <strong>LibreWXR</strong> (CC BY 4.0). Worldwide forecasts and city search from <a href="https://open-meteo.com">Open-Meteo</a>; radar basemap tiles from Esri World Street Map. Italian radar tiles are <strong>Radar-DPC</strong> (Italian Dipartimento della Protezione Civile).</p>
       </div>
     </section>
 
@@ -213,7 +238,7 @@
       <div class="container">
         <h2>Built-In Wallpaper Engine</h2>
         <p>MagnaDesk doesn't just draw on your wallpaper — it manages it too.</p>
-        <p style="margin-top: 1rem;">To render the canvas the way I wanted — baked right into the desktop, below the icons, with no overlay window in the way — I had to take over the wallpaper itself. Once I was already managing your wallpaper, it felt wrong to do it halfway. So I'm building it out into a proper wallpaper engine: single images, slideshows, solid colors, web sources, and more to come. If MagnaDesk is going to own your wallpaper, I want it to be the best wallpaper experience on your machine.</p>
+        <p style="margin-top: 1rem;">To render the canvas the way I wanted — baked right into the desktop, below the icons, with no overlay window in the way — I had to take over the wallpaper itself. Once I was already managing your wallpaper, it felt wrong to do it halfway. So I'm building it out into a proper wallpaper engine: single images, slideshows, solid colors, independent control of every monitor, and more to come. If MagnaDesk is going to own your wallpaper, I want it to be the best wallpaper experience on your machine.</p>
 
         <div class="card-grid">
           <div class="card">
@@ -222,21 +247,56 @@
           </div>
           <div class="card">
             <h3>Slideshow</h3>
-            <p>Cycle through images in a folder at a configurable interval. Sequential or shuffle. Advance anytime with <strong>Ctrl+Alt+W</strong> or from the right-click desktop menu.</p>
+            <p>Cycle through images in a folder at a configurable interval. Sequential or shuffle, and it can pull from subfolders too. Advance anytime with <strong>Ctrl+Alt+W</strong> or from the right-click desktop menu. On a laptop or tablet, you can tell it to pause while you're on battery.</p>
           </div>
           <div class="card">
             <h3>Solid Color</h3>
             <p>Pick a preset color or enter a hex value for a clean, minimal background.</p>
           </div>
           <div class="card">
-            <h3>Web Image Sources</h3>
-            <p>Search and download wallpapers from Unsplash, Pexels, and Wallhaven directly in the app. Uses your own free API keys — they never leave your machine.</p>
+            <h3>Every Monitor, Separately</h3>
+            <p>Tick <strong>Control each monitor separately</strong> and every display gets its own mode, image, color, or slideshow folder — one screen on a solid color while another runs a slideshow. Monitors advance one at a time rather than all flipping at once, so your desktop changes gradually instead of blinking. Independent folders per monitor are a full-version feature; wallpaper baking and slideshows across all your monitors are not.</p>
+          </div>
+          <div class="card">
+            <h3>Finding Wallpapers</h3>
+            <p>The Sources panel points you straight to Unsplash, Pexels, and Wallhaven. Browse and download there, save to a folder, then aim the slideshow at it. MagnaDesk used to search those sites for you — their terms don't allow apps like mine to do that, so now it sends you to them directly and they get the visit.</p>
           </div>
         </div>
 
         <div class="video-container">
           <div class="video-placeholder">Wallpaper engine demo video coming soon</div>
         </div>
+      </div>
+    </section>
+
+    <!-- Boards -->
+    <section class="section" style="background: var(--color-white);">
+      <div class="container">
+        <h2>Boards — More Than One Desktop</h2>
+        <p>A board is a whole independent canvas: its own notes, images, drawings, widgets, and pen color. Keep one for work, one for home, one for the project that's eating your life — and switch between them from the tray in a click.</p>
+        <ul class="feature-list" style="margin-top: 1rem;">
+          <li><strong>Switch instantly</strong> — pick a board from the <strong>Boards</strong> submenu. The one you're leaving is saved first, then the new one loads and bakes into your wallpaper.</li>
+          <li><strong>Create, rename, delete</strong> — all from the same menu. Deleting asks first, and you can't delete your only board.</li>
+          <li><strong>Nothing to migrate</strong> — the desktop you already have becomes a board called <strong>My Desktop</strong> the first time you run this version. You won't lose anything or have to set it up.</li>
+          <li><strong>Backed up like everything else</strong> — each board gets its own folder with the same automatic backups as the main canvas.</li>
+        </ul>
+        <p style="margin-top: 1rem;">Creating extra boards is a full-version feature. Switching between, viewing, renaming, and deleting the boards you already have always works — no board is ever hidden or taken away from you.</p>
+      </div>
+    </section>
+
+    <!-- Items Manager -->
+    <section class="section">
+      <div class="container">
+        <h2>Find Anything on Your Canvas</h2>
+        <p>Once you've got a busy desktop, things get lost — buried under other items, stranded off-screen after a monitor change, or faded to 15% opacity by someone who then couldn't find them again. (That someone was me.) The <strong>Items</strong> tab in Settings lists everything on your canvas and lets you fix it from there.</p>
+        <ul class="feature-list" style="margin-top: 1rem;">
+          <li><strong>Everything, grouped by type</strong> — Notes, Images, Documents, Drawings, and Widgets, listed even when the canvas is hidden.</li>
+          <li><strong>Click a row to find it</strong> — MagnaDesk drops into Edit Mode if it needs to, brings the item to the front, and highlights it on the canvas.</li>
+          <li><strong>Search and sort</strong> — filter by name or type, and sort by z-order, name, or opacity.</li>
+          <li><strong>Names that make sense</strong> — sticky notes name themselves from their first few words, or type your own. Clear the field to go back to the automatic one.</li>
+          <li><strong>Opacity slider per item</strong> — fade or restore anything live, with a one-click reset back to 100%.</li>
+          <li><strong>Bring to front, send to back, delete</strong> — sort out z-order and clear clutter without hunting for the thing on screen.</li>
+        </ul>
       </div>
     </section>
 
@@ -266,7 +326,9 @@
         <ul class="feature-list">
           <li>Items on disconnected monitors automatically migrate to the nearest active monitor</li>
           <li>When the monitor reconnects, items return to their original positions</li>
+          <li>Mixed display scaling is handled properly, so baked items match what you saw in Edit Mode on every screen</li>
           <li>Use "Recover Off-Screen Items" from the tray menu if anything gets lost</li>
+          <li>Your original wallpaper comes back whenever you exit — and it comes back even if MagnaDesk crashes</li>
         </ul>
       </div>
     </section>
@@ -275,6 +337,7 @@
     <section class="section" style="background: var(--color-white);">
       <div class="container">
         <h2>Keyboard Shortcuts</h2>
+        <p>The three shortcuts that work from anywhere — Toggle Edit Mode, Next Wallpaper, and Quick Paste — are defaults, not fixed. Remap them in <strong>Settings → General → Hotkeys</strong>: click one, press your combination (needs at least one modifier), and if it clashes with another MagnaDesk shortcut or something another app has already claimed, it tells you right there instead of quietly failing. Reset puts a default back. The rest apply inside Edit Mode.</p>
         <div class="shortcut-table">
           <table>
             <thead>
@@ -284,10 +347,10 @@
               </tr>
             </thead>
             <tbody>
-              <tr><td>Ctrl + Shift + M</td><td>Toggle Edit Mode (works from anywhere)</td></tr>
-              <tr><td>Ctrl + Alt + Q</td><td>Quick Paste — clipboard image or text onto the canvas (works from anywhere, even when canvas is hidden)</td></tr>
+              <tr><td>Ctrl + Shift + M</td><td>Toggle Edit Mode — default, works from anywhere</td></tr>
+              <tr><td>Ctrl + Alt + Q</td><td>Quick Paste — clipboard image or text onto the canvas. Default, works from anywhere, even when the canvas is hidden</td></tr>
               <tr><td>Ctrl + Alt + Q, Q</td><td>Quick Note Edit — double-tap within 400&nbsp;ms to open the floating note editor (single tap is Quick Paste)</td></tr>
-              <tr><td>Ctrl + Alt + W</td><td>Next Wallpaper (works from anywhere)</td></tr>
+              <tr><td>Ctrl + Alt + W</td><td>Next Wallpaper — default, works from anywhere</td></tr>
               <tr><td>S</td><td>Select tool</td></tr>
               <tr><td>N</td><td>Add Note</td></tr>
               <tr><td>I</td><td>Add Image</td></tr>
@@ -314,15 +377,54 @@
           </div>
           <div class="card">
             <h3>Google <span style="font-size: 0.8rem; color: var(--color-primary);">— coming soon</span></h3>
-            <p>Sign in via browser-based OAuth for access to Google Calendar, Gmail, and Google Tasks, with multiple accounts supported. Google connectivity is temporarily switched off while I finish moving the app to production — it's coming soon.</p>
+            <p>Sign in via browser-based OAuth for Google Calendar, Tasks, and Keep. It's built and waiting — switched off while Google reviews the permissions MagnaDesk asks for, with the <strong>Add Google…</strong> button greyed out until then. Once it clears, everything switches on in an update with no reinstall. Gmail comes in a later one.</p>
           </div>
         </div>
         <p style="margin-top: 1rem;">All tokens are encrypted via Windows DPAPI and stored locally. Nothing leaves your machine.</p>
+        <p style="margin-top: 1rem; color: var(--color-text-light); font-size: 0.95rem;">The free version connects one account — Microsoft today, or Google once it's switched on. Connecting several at once is part of the full version.</p>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section" style="background: var(--color-white);">
+      <div class="container">
+        <h2>Free to Try, Then a One-Time Unlock</h2>
+        <p>MagnaDesk is a free download with <strong>everything unlocked for 30 days</strong> — no credit card, no sign-up, nothing to cancel. After that it settles into a limited version unless you buy the full unlock: <strong>$14.99, once</strong>, through the Microsoft Store. No subscription, no second purchase later.</p>
+        <p style="margin-top: 1rem;">The app never stops working. It doesn't lock you out, hold your desktop hostage, or nag you every time you open it — it just quietly does less.</p>
+
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+          <div class="card">
+            <h3>Free, Forever</h3>
+            <ul class="feature-list">
+              <li>The whole canvas — sticky notes, images, documents, drawings, shapes</li>
+              <li>Wallpaper baking and slideshows across all your monitors</li>
+              <li>Weather and Local To-Do widgets</li>
+              <li>Account widgets — Calendar, Mail, Tasks, To-Do, OneNote — on one connected Microsoft account</li>
+              <li>The boards you already have: switch, rename, delete</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>The Full Version — $14.99</h3>
+            <ul class="feature-list">
+              <li>Quick Paste and Quick Note Edit</li>
+              <li>The Radar widget</li>
+              <li>All 11 widget color themes</li>
+              <li>Separate wallpaper folders for each monitor</li>
+              <li>More than one connected account</li>
+              <li>Creating new boards</li>
+            </ul>
+          </div>
+        </div>
+
+        <p style="margin-top: 1.5rem;">Everything above is yours during the 30 days, so you can find out whether you actually want it before paying for it. Pay the $14.99 and it all comes back exactly as you left it — nothing is deleted or reset in the meantime.</p>
+        <div style="margin-top: 1.5rem; text-align: center;">
+          <a href="https://apps.microsoft.com/store/detail/9N05BXFN6VRW?cid=DevShareMCLPCS" class="btn btn-primary">Get MagnaDesk on the Microsoft Store</a>
+        </div>
       </div>
     </section>
 
     <!-- Requirements -->
-    <section class="section" style="background: var(--color-white);">
+    <section class="section">
       <div class="container">
         <h2>Requirements</h2>
         <ul class="feature-list">
@@ -334,7 +436,7 @@
     </section>
 
     <!-- Support -->
-    <section class="section">
+    <section class="section" style="background: var(--color-white);">
       <div class="container" style="text-align: center;">
         <h2>Support</h2>
         <p style="margin-top: 1rem; color: var(--color-text-light);">
