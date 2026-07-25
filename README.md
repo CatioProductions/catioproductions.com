@@ -24,13 +24,13 @@ apps/
   magnadesk.html                    — Product page (full details from user manual + docs)
 rescue/
   index.html                        — Cat rescue mission + TNR info
-  donate.html                       — Donation page (Zeffy/GoFundMe links)
+  donate.html                       — Donation page (PayPal/GoFundMe links)
 ```
 
 ## Apps
 
 - **Virtual Monitor Manager** — Up to 9 virtual workspaces per physical monitor. Free/Plus ($14.99)/Pro ($23.49) tiers.
-- **MagnaDesk** — Digital corkboard baked into the Windows wallpaper. Sticky notes, images, drawings, and live widgets (Tasks, To-Do, Calendar, OneNote, Mail) with Microsoft + Google accounts.
+- **MagnaDesk** — Digital corkboard baked into the Windows wallpaper. Sticky notes, images, documents, drawings, multiple boards, and live widgets (Tasks, To-Do, Calendar, OneNote, Mail, Local To-Do, Weather, Radar). Microsoft accounts supported; Google coming soon. Free download, everything unlocked for 30 days, then a one-time $14.99 unlock.
 
 ## Local Preview
 
@@ -44,10 +44,11 @@ Then visit `http://localhost:8000`.
 
 ## TODO
 
-- [ ] Add demo videos (YouTube embeds) for Virtual Monitor Manager
-- [ ] Finish MagnaDesk demo videos — Edit Mode, Quick Paste, and Quick Note Edit are embedded; remaining sections still use placeholders
-- [ ] Add MagnaDesk pricing (Store link is live)
+- [ ] Add demo videos (YouTube embeds) for Virtual Monitor Manager — ten placeholders, none recorded yet
+- [ ] Finish MagnaDesk demo videos — Overview, Edit Mode, Quick Paste, and Quick Note Edit are embedded; canvas items, widgets, and wallpaper engine still use placeholders
+- [x] Add MagnaDesk pricing (Store link is live)
 - [x] Microsoft Store links live for VMM and MagnaDesk (Partner Center listings)
-- [ ] Replace placeholder donation links with real Zeffy/GoFundMe URLs
-- [ ] Rework rescue and about pages with real personal content
+- [x] Real donation links (PayPal + GoFundMe)
+- [ ] Rework rescue and about pages with real personal content — the pet-trust copy is final; the rest is still placeholder
 - [ ] Add real images/screenshots throughout
+- [ ] Check all pages at ~380px width — several sections have been added without a mobile render check
