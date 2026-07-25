@@ -61,7 +61,9 @@
           <div class="grid-cell">I</div>
         </div>
 
-        <p style="margin-top: 1rem;">Cells show you what's happening at a glance — active workspaces are bright with a white border, occupied workspaces have a dim blue border, and empty ones fade into the background. Drag the grid to any corner of your screen. Resize it or minimize it completely. Both position and size are saved automatically.</p>
+        <p style="margin-top: 1rem;">Cells show you what's happening at a glance — active workspaces are bright with a white border, occupied workspaces have a dim blue border, and empty ones fade into the background. Workspace B, top-center, is home — it's the one you land on when the app starts. Hover any cell for a tooltip with that workspace's name. Drag the grid to any corner of your screen. Resize it or minimize it completely. Both position and size are saved automatically.</p>
+
+        <p style="margin-top: 1rem;">One thing worth knowing up front: the grid is semi-transparent, but it's a real window sitting on top of everything else. Anything directly underneath it can't be clicked until you move it. That's why I'd park it in a corner — somewhere it covers as little of your actual work as possible.</p>
 
         <div class="video-container">
           <div class="video-placeholder">Grid overview video coming soon</div>
@@ -128,7 +130,7 @@
         <div class="card-grid">
           <div class="card">
             <h3>Apps Stay Where You Put Them</h3>
-            <p>Launch apps normally — they open on whichever workspace is active. When you switch away, they hide. When you return, they reappear in the exact same state and position.</p>
+            <p>Launch apps normally — they open on whichever workspace is active. When you switch away, they hide. When you return, they reappear in the exact same state and position. One exception: an app you left minimized stays minimized when you come back — it won't pop itself open.</p>
           </div>
           <div class="card">
             <h3>Move Apps Between Workspaces</h3>
@@ -136,21 +138,26 @@
           </div>
           <div class="card">
             <h3>Pin Apps to a Workspace</h3>
-            <p>Right-click an app's title bar and pick "Always open on" → workspace. Pin your browser to I, your email to E — every launch lands where it belongs. Pins persist across sessions and survive layout changes.</p>
+            <p>Right-click an app's title bar and pick "Always open on" → workspace. Pin your browser to I, your email to E — every launch lands where it belongs, even if you're looking at a different workspace at the time, and a brief toast confirms where it went. Pins are saved by process name and persist across sessions.</p>
+            <p style="margin-top: 0.75rem;">Change layouts and your pins come with you. A pin whose workspace still exists in the new layout keeps working; one whose workspace is gone falls back to the current workspace for now, and starts working again the moment you switch back to a layout that has it.</p>
             <div class="video-container">
               <div class="video-placeholder">Pinning demo video coming soon</div>
             </div>
           </div>
           <div class="card">
             <h3>Ctrl+Click — Power Move</h3>
-            <p>Click the window you want to move, then Ctrl+click any cell on any grid — including a grid on a different physical monitor. The window jumps there immediately. The fastest way to relocate a window across screens.</p>
+            <p>Click the window you want to move, then Ctrl+click any cell on any grid — including a grid on a different physical monitor. The window jumps there immediately. The fastest way to relocate a window across screens, and the one that still works when a window's title bar is hidden or awkward to reach.</p>
             <div class="video-container">
               <div class="video-placeholder">Ctrl+click cross-monitor video coming soon</div>
             </div>
           </div>
           <div class="card">
             <h3>Clean Exit</h3>
-            <p>When Virtual Monitor Manager exits, all tracked applications are released and restored to their normal on-screen positions. Nothing is closed. Your work is preserved.</p>
+            <p>When Virtual Monitor Manager exits, all tracked applications are released and restored to their normal on-screen positions. Nothing is closed. Your work is preserved. If a window's position can't be read on the way out, it gets minimized rather than parked off-screen — recoverable either way.</p>
+          </div>
+          <div class="card">
+            <h3>When Things Go Wrong</h3>
+            <p>Hard crash, power cut, blue screen — if a window ends up stranded off-screen, the next launch finds it and pulls it back, and tells you it did. Your settings and pins are written the safe way too: a crash mid-save can't leave you with a truncated file and a reset config. None of this is something you should ever have to think about, which is the point.</p>
           </div>
         </div>
       </div>
@@ -163,6 +170,8 @@
         <p>On multi-monitor systems, each physical screen gets its own independent workspace grid. Switch workspaces on one screen without affecting the others. Use Ctrl+click on a secondary monitor's grid to move the focused window to any workspace on that screen.</p>
         <p style="margin-top: 1rem;">Hotkeys work across monitors too — tap a hotkey once for the primary monitor, twice for the second, three times for the third.</p>
         <p style="margin-top: 1rem;">Want all monitors to switch together? Enable <strong>Mirror mode</strong> in Settings and every screen switches to the same workspace simultaneously.</p>
+        <p style="margin-top: 1rem;">The inner edges where your monitors meet stay open, so your cursor crosses between screens the way it always has. To get back to an adjacent workspace, rest the cursor in one of the corner zones at either end of that edge — and if those zones feel too big or too easy to miss, resize them with <strong>Corner Catch Size</strong> in Settings.</p>
+        <p style="margin-top: 1rem; color: var(--color-text-light); font-size: 0.95rem;">Fair warning: multi-monitor support is still in active development. It ships in this release and it's fully usable — I run it daily — but there are edge cases I haven't caught yet. If you hit one, tell me and it goes to the top of the list.</p>
 
         <div class="video-container">
           <div class="video-placeholder">Multi-monitor demo video coming soon</div>
@@ -201,8 +210,40 @@
       </div>
     </section>
 
-    <!-- Best Practices -->
+    <!-- Keyboard Shortcuts -->
     <section class="section">
+      <div class="container">
+        <h2>Keyboard Shortcuts</h2>
+        <p>The letter key always matches the workspace label, so there's nothing to memorize. Change the modifier combination in Settings if it collides with something else you use.</p>
+        <div class="shortcut-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Shortcut</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Ctrl + Alt + A</td><td>Workspace A (top-left)</td></tr>
+              <tr><td>Ctrl + Alt + B</td><td>Workspace B (top-center, home)</td></tr>
+              <tr><td>Ctrl + Alt + C</td><td>Workspace C (top-right)</td></tr>
+              <tr><td>Ctrl + Alt + D</td><td>Workspace D (middle-left)</td></tr>
+              <tr><td>Ctrl + Alt + E</td><td>Workspace E (center)</td></tr>
+              <tr><td>Ctrl + Alt + F</td><td>Workspace F (middle-right)</td></tr>
+              <tr><td>Ctrl + Alt + G</td><td>Workspace G (bottom-left)</td></tr>
+              <tr><td>Ctrl + Alt + H</td><td>Workspace H (bottom-center)</td></tr>
+              <tr><td>Ctrl + Alt + I</td><td>Workspace I (bottom-right)</td></tr>
+              <tr><td>Tap twice / three times</td><td>Target the second or third monitor instead of the primary</td></tr>
+              <tr><td>Ctrl + Alt + M</td><td>Toggle mouse edge navigation on or off</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top: 1rem; color: var(--color-text-light); font-size: 0.95rem;">Modifier options are <strong>Ctrl+Alt</strong> (default), <strong>Ctrl+Shift</strong>, or <strong>Alt+Shift</strong>. Ctrl+Alt+M is fixed and isn't affected by that setting. Workspace letters can't be reassigned.</p>
+      </div>
+    </section>
+
+    <!-- Best Practices -->
+    <section class="section" style="background: var(--color-white);">
       <div class="container">
         <h2>Best Practices</h2>
         <p>Tips from how I use Virtual Monitor Manager day to day. I'll add to this list as I find more — and as users send in their own.</p>
@@ -219,7 +260,7 @@
     </section>
 
     <!-- Known Limitations -->
-    <section class="section" style="background: var(--color-white);">
+    <section class="section">
       <div class="container">
         <h2>Known Limitations</h2>
 
@@ -245,7 +286,7 @@
     </section>
 
     <!-- vs Windows Virtual Desktops -->
-    <section class="section">
+    <section class="section" style="background: var(--color-white);">
       <div class="container">
         <h2>How Is This Different from Windows Virtual Desktops?</h2>
         <div class="comparison-table">
@@ -290,10 +331,11 @@
     </section>
 
     <!-- Pricing -->
-    <section id="pricing" class="section" style="background: var(--color-white);">
+    <section id="pricing" class="section">
       <div class="container" style="text-align: center;">
         <h2>Pricing</h2>
         <p style="margin: 0 auto 1.5rem;">One-time purchase. No subscription. No recurring fees.</p>
+        <p style="margin: 0 auto 1.5rem; max-width: 700px;"><strong>Right now, every tier gets all nine workspaces.</strong> Workspace limits are switched off while I finish building the 7-day trial — so if you download the free version today, you get the whole thing. Enjoy it while it lasts. The tiers below are what applies once limits are turned on.</p>
         <div class="pricing-grid">
           <div class="pricing-card">
             <h3>Free</h3>
@@ -303,7 +345,7 @@
           </div>
           <div class="pricing-card featured">
             <h3>Plus</h3>
-            <div class="pricing-price">$13.99</div>
+            <div class="pricing-price">$14.99</div>
             <p>4 workspaces</p>
             <a href="https://apps.microsoft.com/store/detail/9NGZ2X05DZDT?cid=DevShareMCLPCS" class="btn btn-primary">Get Plus</a>
           </div>
@@ -314,6 +356,7 @@
             <a href="https://apps.microsoft.com/store/detail/9NGZ2X05DZDT?cid=DevShareMCLPCS" class="btn btn-primary">Get Pro</a>
           </div>
         </div>
+        <p class="pricing-note">Upgrades take effect the moment they go through — no restart, no waiting. Changed machines or reinstalled? Open the About dialog and hit <strong>Restore purchases</strong> to pull your tier back from the Store.</p>
         <p class="pricing-note">Available on the <a href="https://apps.microsoft.com/store/detail/9NGZ2X05DZDT?cid=DevShareMCLPCS">Microsoft Store</a> and <a href="https://catiodaddy.gumroad.com/l/ztips">Gumroad</a>.</p>
         <p class="pricing-note" style="margin-top: 0.5rem;">Downloads are handled through the Microsoft Store or Gumroad.</p>
         <div class="hero-buttons" style="margin-top: 1.5rem; justify-content: center;">
@@ -324,7 +367,7 @@
     </section>
 
     <!-- Requirements -->
-    <section class="section">
+    <section class="section" style="background: var(--color-white);">
       <div class="container">
         <h2>Requirements</h2>
         <ul class="feature-list">
@@ -337,7 +380,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="section" style="background: var(--color-white);">
+    <section class="section">
       <div class="container">
         <h2>Frequently Asked Questions</h2>
         <div class="faq-list">
@@ -369,12 +412,24 @@
             <summary>I can't find an application — it seems to have disappeared.</summary>
             <p>It's almost certainly on a different workspace. Check the grid — any cell with a medium-brightness fill has applications assigned to it. Click through those cells to find it.</p>
           </details>
+          <details class="faq-item">
+            <summary>An application isn't showing up in my workspace at all.</summary>
+            <p>Usually one of two things. Either it's running with elevated privileges — Task Manager, Registry Editor and friends can't be tracked, which is a Windows security boundary, not a bug. Or you launched it before Virtual Monitor Manager started and it hasn't been picked up yet. Switch to another workspace and back; discovery runs continuously and will find it within a few seconds.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I rename workspaces to something other than A through I?</summary>
+            <p>Not in this version. It's on the list for a future update.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I uninstall it?</summary>
+            <p>Windows Settings → Apps, search for Virtual Monitor Manager, and choose Uninstall. That removes the application files. If you want it gone completely, delete <code>%AppData%\Virtual Monitor Manager</code> as well — that's where your settings live.</p>
+          </details>
         </div>
       </div>
     </section>
 
     <!-- Support -->
-    <section class="section">
+    <section class="section" style="background: var(--color-white);">
       <div class="container" style="text-align: center;">
         <h2>Support</h2>
         <p>Check the FAQ above first — most questions are answered there. If you need more help, email me:</p>

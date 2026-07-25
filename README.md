@@ -29,7 +29,7 @@ rescue/
 
 ## Apps
 
-- **Virtual Monitor Manager** — Up to 9 virtual workspaces per physical monitor. Free/Plus ($13.99)/Pro ($23.49) tiers.
+- **Virtual Monitor Manager** — Up to 9 virtual workspaces per physical monitor. Free/Plus ($14.99)/Pro ($23.49) tiers.
 - **MagnaDesk** — Digital corkboard baked into the Windows wallpaper. Sticky notes, images, drawings, and live widgets (Tasks, To-Do, Calendar, OneNote, Mail) with Microsoft + Google accounts.
 
 ## Local Preview
