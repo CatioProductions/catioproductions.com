@@ -596,6 +596,81 @@ main {
   }
 }
 
+/* ===== Legal / Policy Pages ===== */
+.legal {
+  max-width: 800px;
+}
+
+.legal h1 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+}
+
+.legal h2 {
+  font-size: 1.35rem;
+  color: var(--color-primary);
+  text-align: left;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.legal h3 {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.legal p {
+  margin: 0 0 0.9rem;
+  max-width: none;
+  text-align: left;
+}
+
+.legal .legal-meta {
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+}
+
+.legal ul {
+  padding-left: 1.4rem;
+  margin-bottom: 0.9rem;
+}
+
+.legal li {
+  margin: 0.25rem 0;
+}
+
+.legal code {
+  background: var(--color-white);
+  border: 1px solid #e0e0e0;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 0.9em;
+  word-break: break-all;
+}
+
+.legal .comparison-table table {
+  background: var(--color-white);
+  font-size: 0.95rem;
+}
+
+.legal .comparison-table td {
+  vertical-align: top;
+}
+
+.legal .callout {
+  background: var(--color-white);
+  border-left: 3px solid var(--color-primary);
+  padding: 1rem 1.25rem 0.25rem;
+  margin: 1rem 0 1.5rem;
+  border-radius: 0 8px 8px 0;
+}
+
 /* Affiliate / partner cards (rescue page) */
 .affiliate-card {
   display: flex;
