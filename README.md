@@ -25,7 +25,18 @@ apps/
 rescue/
   index.html                        — Cat rescue mission + TNR info
   donate.html                       — Donation page (PayPal/GoFundMe links)
+privacy/
+  magnadesk.html                    — MagnaDesk privacy policy (Google OAuth requirement)
 ```
+
+## Privacy Policy
+
+The MagnaDesk privacy policy is hosted in two places, and both must be kept in sync:
+
+- `privacy/magnadesk.html` here → https://catioproductions.com/privacy/magnadesk.html
+- `magnadesk.html` in [CatioProductions/Privacy](https://github.com/CatioProductions/Privacy) → https://catioproductions.github.io/Privacy/magnadesk.html
+
+The on-domain copy is the one submitted to Google, since OAuth verification wants the policy on the same domain as the app's homepage. The github.io copy stays live because other places (Store listing, OAuth consent screen, in-app links) still point at it.
 
 ## Apps
 
@@ -52,3 +63,5 @@ Then visit `http://localhost:8000`.
 - [ ] Rework rescue and about pages with real personal content — the pet-trust copy is final; the rest is still placeholder
 - [ ] Add real images/screenshots throughout
 - [ ] Check all pages at ~380px width — several sections have been added without a mobile render check
+- [x] Host the MagnaDesk privacy policy on catioproductions.com for Google OAuth verification
+- [ ] Once Google verification passes, delete the "Experimental status" paragraph from Section 4 of the privacy policy — in both copies
