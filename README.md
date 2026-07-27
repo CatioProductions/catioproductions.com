@@ -27,6 +27,8 @@ rescue/
   donate.html                       — Donation page (PayPal/GoFundMe links)
 privacy/
   magnadesk.html                    — MagnaDesk privacy policy (Google OAuth requirement)
+terms/
+  magnadesk.html                    — MagnaDesk terms of service (Google OAuth requirement)
 ```
 
 ## Privacy Policy
@@ -37,6 +39,14 @@ The MagnaDesk privacy policy is hosted in two places, and both must be kept in s
 - `magnadesk.html` in [CatioProductions/Privacy](https://github.com/CatioProductions/Privacy) → https://catioproductions.github.io/Privacy/magnadesk.html
 
 The on-domain copy is the one submitted to Google, since OAuth verification wants the policy on the same domain as the app's homepage. The github.io copy stays live because other places (Store listing, OAuth consent screen, in-app links) still point at it.
+
+## Terms of Service
+
+`terms/magnadesk.html` → https://catioproductions.com/terms/magnadesk.html
+
+Google's OAuth consent screen has a Terms of Service field separate from the privacy policy one, and wants it on the app's own domain. **Unlike the privacy policy, this exists in one place only** — there is no copy in the Privacy repo and no legacy URL pointing anywhere else, so there is nothing to keep in sync. Don't add a second copy.
+
+The terms link to the privacy policy, but not the reverse: adding a link into `privacy/magnadesk.html` would mean editing both privacy copies for no real gain.
 
 ## Apps
 
@@ -64,4 +74,10 @@ Then visit `http://localhost:8000`.
 - [ ] Add real images/screenshots throughout
 - [ ] Check all pages at ~380px width — several sections have been added without a mobile render check
 - [x] Host the MagnaDesk privacy policy on catioproductions.com for Google OAuth verification
-- [ ] Once Google verification passes, delete the "Experimental status" paragraph from Section 4 of the privacy policy — in both copies
+- [x] Host the MagnaDesk terms of service on catioproductions.com for Google OAuth verification
+- [ ] Paste the terms URL into the Google OAuth consent screen's Terms of Service field (and the Store listing, if it has one)
+- [x] Trim the privacy policy's Google scope table to the scopes actually being submitted — Calendar, Tasks, and the two userinfo scopes. Gmail and Keep rows removed, and the "Experimental status" paragraph (which was entirely about Gmail/restricted-scope review) deleted. Done in **both** copies, July 26 2026.
+- [ ] Once Google verification passes, update Section 7 of the terms of service — it currently says Google integration is not available.
+- [ ] **The two privacy copies have drifted:** the Privacy repo's Section 8 is still "Weather Widget" while the site's is "Weather and Radar Widgets" (commit `fbab611` never propagated). The scope tables now match; the radar text does not.
+- [ ] **In-app privacy link is dead.** `MagnaDesk/Views/UserManualWindow.xaml` line 600 points at `https://reesedear.github.io/Privacy/magnadesk.html`, which 404s — the repo is under `CatioProductions`, not `reesedear`. Fix in the MagnaDesk repo.
+- [ ] `MagnaDesk/PRIVACY_POLICY.html` in the app repo is a stale third copy (June 2026, no Google scope table). Nothing links to it — delete it or refresh it.
