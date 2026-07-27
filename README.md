@@ -36,7 +36,7 @@ terms/
 The MagnaDesk privacy policy is hosted in two places, and both must be kept in sync:
 
 - `privacy/magnadesk.html` here → https://catioproductions.com/privacy/magnadesk.html
-- `magnadesk.html` in [CatioProductions/Privacy](https://github.com/CatioProductions/Privacy) → https://catioproductions.github.io/Privacy/magnadesk.html
+- `magnadesk.html` in [CatioProductions/Privacy](https://github.com/CatioProductions/Privacy) → https://catioproductions.github.io/Privacy/magnadesk.html (cloned locally at `Desktop\Privacy`)
 
 The on-domain copy is the one submitted to Google, since OAuth verification wants the policy on the same domain as the app's homepage. The github.io copy stays live because other places (Store listing, OAuth consent screen, in-app links) still point at it.
 
@@ -78,6 +78,6 @@ Then visit `http://localhost:8000`.
 - [ ] Paste the terms URL into the Google OAuth consent screen's Terms of Service field (and the Store listing, if it has one)
 - [x] Trim the privacy policy's Google scope table to the scopes actually being submitted — Calendar, Tasks, and the two userinfo scopes. Gmail and Keep rows removed, and the "Experimental status" paragraph (which was entirely about Gmail/restricted-scope review) deleted. Done in **both** copies, July 26 2026.
 - [ ] Once Google verification passes, update Section 7 of the terms of service — it currently says Google integration is not available.
-- [ ] **The two privacy copies have drifted:** the Privacy repo's Section 8 is still "Weather Widget" while the site's is "Weather and Radar Widgets" (commit `fbab611` never propagated). The scope tables now match; the radar text does not.
+- [x] Re-sync the two privacy copies. Verified in sync as of July 26 2026: same four Google scopes, same "Weather and Radar Widgets" Section 8, same date. (The radar rewrite had been propagated separately; the scope trim landed on top of it via rebase.)
 - [ ] **In-app privacy link is dead.** `MagnaDesk/Views/UserManualWindow.xaml` line 600 points at `https://reesedear.github.io/Privacy/magnadesk.html`, which 404s — the repo is under `CatioProductions`, not `reesedear`. Fix in the MagnaDesk repo.
 - [ ] `MagnaDesk/PRIVACY_POLICY.html` in the app repo is a stale third copy (June 2026, no Google scope table). Nothing links to it — delete it or refresh it.
